@@ -1,0 +1,45 @@
+{
+  "name": "rental-api",
+  "version": "1.0.0",
+  "description": "For rental api",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/server.js",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gadanihiman/node-api-starter"
+  },
+  "author": "Gadani Himan G. <gadanihiman@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gadanihiman/node-api-starter/issues"
+  },
+  "homepage": "https://github.com/gadanihiman/node-api-starter#README",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "mongoose": "^5.6.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "eslint": "^6.0.0",
+    "jest": "^24.8.0",
+    "jest-junit": "^6.4.0",
+    "newman": "^4.5.1",
+    "nodemon": "^1.19.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3",
+    "wait-on": "^3.2.0"
+  }
+}
