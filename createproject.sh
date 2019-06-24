@@ -24,14 +24,14 @@ echo "Setting up dependencies from NPM..."
 npm i
 
 echo "Removing unnecessary stuff..."
-# rm -rf .git
-# rm -rf templates
-# rm README.md
-# rm createproject.sh
+rm -rf .git
+rm -rf templates
+rm README.md
+rm createproject.sh
 
 echo "Initializing new git for you..."
-# git init
-# git add .
-# git commit -m "Initial Commit"
+git init
+git add .
+git commit -m "Initial Commit"
 
 echo "Done, happy developing!"
