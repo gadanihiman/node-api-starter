@@ -30,6 +30,7 @@ cp ./templates/.vscode/settings.json ./.vscode/settings.json
 cp ./templates/app/.babelrc ./.babelrc
 cp ./templates/app/.eslintrc.json ./.eslintrc.json
 cp ./templates/Dockerfile ./Dockerfile
+cp ./templates/.env.example ./.env.example
 cp ./templates/jest.config.js ./jest.config.js
 cp ./templates/app/.prettierrc ./.prettierrc
 cp ./templates/app/.gitignore ./.gitignore
