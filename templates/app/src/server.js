@@ -6,8 +6,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import compression from 'compression';
 import queryParser from 'express-query-parser';
-import userRoutes from './routes/user.routes';
-import indexRoutes from './routes/index.routes';
+import routes from './routes/index.routes';
 import logger from '../utils/logger';
 // import mongo from '../utils/mongo_connect';
 
@@ -17,7 +16,7 @@ const server = express();
 
 const { PORT } = process.env;
 
-const port = (PORT || 8080);
+const port = PORT || 8080;
 
 server.use(bodyParser.json({ limit: '2mb' }));
 server.use(
@@ -31,7 +30,7 @@ server.use(helmet());
 server.use(cors());
 
 // listen on the designated port found in the configuration
-server.listen(port, (err) => {
+server.listen(port, err => {
   if (err) {
     logger.error(err);
     process.exit(1);
@@ -49,7 +48,7 @@ server.listen(port, (err) => {
   logger.info(`API is now running on port ${port}`);
 });
 
-server.use('/api', userRoutes);
-server.use('/api', indexRoutes);
+// mount the root routes
+server.use('/api', routes);
 
 export default server;

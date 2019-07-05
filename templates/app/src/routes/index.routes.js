@@ -1,4 +1,5 @@
 import express from 'express';
+import users from './users.routes';
 import { version } from '../../package.json';
 
 const router = express.Router();
@@ -9,7 +10,14 @@ router.use((req, res, next) => {
   next();
 });
 
-// define index routes
+/**
+ * Register all available routes
+ */
+
+// define index/root routes
 router.get('/', (req, res) => res.json({ status: 'SUCCESS', version }));
+
+// Users v1 route
+router.use('/v1/users', users);
 
 export default router;

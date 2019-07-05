@@ -1,0 +1,8 @@
+templates/app/node_modules
+templates/app/logs
+templates/app/.env
+templates/app/package-lock.json
+logs
+node_modules
+package-lock.json
+.env
