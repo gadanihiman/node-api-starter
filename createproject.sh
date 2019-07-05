@@ -34,6 +34,7 @@ cp ./templates/Dockerfile ./Dockerfile
 cp ./templates/app/.env.example ./.env.example
 cp ./templates/jest.config.js ./jest.config.js
 cp ./templates/app/.prettierrc ./.prettierrc
+cp ./templates/app/.prettierignore ./.prettierignore
 cp ./templates/app/.gitignore ./.gitignore
 
 echo "Setting up dependencies from NPM..."

@@ -10,8 +10,11 @@ router.use((req, res, next) => {
   next();
 });
 
-// define users routes
-// v1 is the version of this users api
-router.get('/v1/users', userController.getAllUsers);
+/**
+ * define all users routes
+ */
+
+// routes /v1/users for get list all users
+router.get('', userController.getAllUsers);
 
 export default router;
