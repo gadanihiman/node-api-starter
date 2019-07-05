@@ -8,6 +8,7 @@ mkdir ./utils
 mkdir ./dist
 mkdir ./.vscode
 mkdir ./tests
+mkdir ./docs
 
 echo "Setup boilerplate..."
 # src dir
