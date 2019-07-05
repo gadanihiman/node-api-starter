@@ -4,8 +4,10 @@
         "es6": true
     },
     "extends": [
-        "airbnb-base"
+        "airbnb-base",
+        "prettier"
     ],
+    "plugins": ["prettier"],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -15,5 +17,7 @@
         "sourceType": "module"
     },
     "rules": {
+        // put your global rules here
+        "prettier/prettier": ["error"]
     }
 }

@@ -1,4 +1,5 @@
 import express from 'express';
+import { version } from '../../package.json';
 
 const router = express.Router();
 
@@ -9,6 +10,6 @@ router.use((req, res, next) => {
 });
 
 // define index routes
-router.get('/', (req, res) => res.json({ status: 'SUCCESS' }));
+router.get('/', (req, res) => res.json({ status: 'SUCCESS', version }));
 
 export default router;

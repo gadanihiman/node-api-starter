@@ -11,7 +11,6 @@ import indexRoutes from './routes/index.routes';
 import logger from '../utils/logger';
 // import mongo from '../utils/mongo_connect';
 
-
 dotEnv.config();
 
 const server = express();
@@ -49,13 +48,6 @@ server.listen(port, (err) => {
   // output the status of the api in the terminal
   logger.info(`API is now running on port ${port}`);
 });
-
-// const mongoConnectionStr = `mongodb://${COSMOS_DB_USERNAME}:${COSMOS_DB_PASSWORD}@${COSMOS_DB_USERNAME}.documents.azure.com:${COSMOS_DB_PORT}/${COSMOS_DB_DBNAME}?ssl=true&replicaSet=globaldb`;
-
-/**
- * Setup Connection to cosmos db
- */
-// mongo.connect(mongoConnectionStr);
 
 server.use('/api', userRoutes);
 server.use('/api', indexRoutes);

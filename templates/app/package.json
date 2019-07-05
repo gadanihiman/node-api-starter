@@ -1,7 +1,7 @@
 {
-  "name": "rental-api",
+  "name": "node_api_starter",
   "version": "1.0.0",
-  "description": "For rental api",
+  "description": "For Building Node Js Api starter",
   "main": "src/server.js",
   "scripts": {
     "start": "nodemon --exec babel-node src/server.js",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/gadanihiman/node-api-starter"
   },
   "author": "Gadani Himan G. <gadanihiman@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gadanihiman/node-api-starter/issues"
   },
@@ -41,13 +41,15 @@
     "@babel/preset-env": "^7.4.5",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-prettier": "^3.1.0",
     "jest": "^24.8.0",
     "jest-junit": "^6.4.0",
     "newman": "^4.5.1",
     "nodemon": "^1.19.1",
     "pre-commit": "^1.2.2",
-    "prettier": "^1.18.2",
+    "prettier": "1.18.2",
     "rimraf": "^2.6.3",
     "wait-on": "^3.2.0"
   }

@@ -8,6 +8,7 @@ mkdir ./utils
 mkdir ./dist
 mkdir ./.vscode
 mkdir ./tests
+mkdir ./docs
 
 echo "Setup boilerplate..."
 # src dir
@@ -30,7 +31,7 @@ cp ./templates/.vscode/settings.json ./.vscode/settings.json
 cp ./templates/app/.babelrc ./.babelrc
 cp ./templates/app/.eslintrc.json ./.eslintrc.json
 cp ./templates/Dockerfile ./Dockerfile
-cp ./templates/.env.example ./.env.example
+cp ./templates/app/.env.example ./.env.example
 cp ./templates/jest.config.js ./jest.config.js
 cp ./templates/app/.prettierrc ./.prettierrc
 cp ./templates/app/.gitignore ./.gitignore
