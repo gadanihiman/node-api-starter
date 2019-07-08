@@ -24,7 +24,7 @@ cp ./templates/app/src/services/user.services.js ./src/services/user.services.js
 cp ./templates/app/utils/mongo_connect.js ./utils/mongo_connect.js
 cp ./templates/app/utils/logger.js ./utils/logger.js
 # tests dir
-cp ./templates/tests/index.test.js ./tests/index.test.js
+cp ./templates/app/tests/index.test.js ./tests/index.test.js
 # others files
 cp ./templates/app/package.json ./package.json
 cp ./templates/.vscode/settings.json ./.vscode/settings.json
