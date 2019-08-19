@@ -17,7 +17,7 @@ cp ./templates/app/src/server.js ./src/server.js
 cp ./templates/app/src/controllers/userControllers.js ./src/controllers/userControllers.js
 # src - routes
 cp ./templates/app/src/routes/index.routes.js ./src/routes/index.routes.js
-cp ./templates/app/src/routes/user.routes.js ./src/routes/user.routes.js
+cp ./templates/app/src/routes/users.routes.js ./src/routes/users.routes.js
 # src - services
 cp ./templates/app/src/services/user.services.js ./src/services/user.services.js
 # utils dir
