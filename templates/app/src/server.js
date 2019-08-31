@@ -8,7 +8,7 @@ import compression from 'compression';
 import queryParser from 'express-query-parser';
 import routes from './routes/index.routes';
 import logger from '../utils/logger';
-// import mongo from '../utils/mongo_connect';
+import mongoConnect from '../utils/mongo_connect';
 
 dotEnv.config();
 
@@ -47,6 +47,8 @@ server.listen(port, err => {
   // output the status of the api in the terminal
   logger.info(`API is now running on port ${port}`);
 });
+
+mongoConnect(process.env.MONGO_CONNECTION_STR);
 
 // mount the root routes
 server.use('/api', routes);

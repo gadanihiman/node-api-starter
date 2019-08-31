@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.wordWrap": "on",
   "files.eol": "auto",
   "prettier.endOfLine": "auto"
