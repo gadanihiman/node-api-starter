@@ -15,6 +15,7 @@ router.use((req, res, next) => {
  */
 
 // routes /v1/users for get list all users
-router.get('', userController.getAllUsers);
+router.get('', userController.list);
+router.post('', userController.store);
 
 export default router;
