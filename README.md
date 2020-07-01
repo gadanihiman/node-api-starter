@@ -8,4 +8,6 @@ Generate your boilerplate, install everything and ready to use with just typing 
 ```
 in Your favorite Terminal.
 
-Contributor is very welcome.
+Note: Make sure the ./createproject.sh script is able to execute.
+
+## Contributor is very welcome.
