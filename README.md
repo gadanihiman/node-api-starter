@@ -10,4 +10,4 @@ in Your favorite Terminal.
 
 Note: Make sure the ./createproject.sh script is able to execute.
 
-## Contributor is very welcome.
+## Contributors are very welcome.
